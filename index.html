@@ -115,12 +115,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -149,6 +149,78 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/14/Chorme-font-size-%E5%B0%8F%E6%96%BC-12px-%E7%9A%84%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="npcenthusiasm">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/07/14/Chorme-font-size-%E5%B0%8F%E6%96%BC-12px-%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Chrome font size 如何小於 12px ？</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-07-14 23:09:27 / Modified: 23:10:41" itemprop="dateCreated datePublished" datetime="2021-07-14T23:09:27+08:00">2021-07-14</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>因為看到設計稿上的字體大小為 10px，所以理所當然直接寫下css font-size 10px，但怎麼設定都沒反應，還發現 font-size 小於 12px 就不會變了...</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/07/14/Chorme-font-size-%E5%B0%8F%E6%96%BC-12px-%E7%9A%84%E6%96%B9%E6%B3%95/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -189,7 +261,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-22 00:27:01" itemprop="dateModified" datetime="2021-05-22T00:27:01+08:00">2021-05-22</time>
+        <time title="Modified: 2021-07-14 23:08:07" itemprop="dateModified" datetime="2021-07-14T23:08:07+08:00">2021-07-14</time>
       </span>
 
   
@@ -202,43 +274,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>在建立完之後，想要紀錄一下自己建立起來的過程，剛好可以當第一篇文章哈哈</p>
-<p>我們將透過 <code>hexo-cli</code> 建立整個 blog app</p>
-<p>筆者 node -v 為 <code>v14.15.1</code></p>
-<ol>
-<li><p>首先安裝 hexo-cli，<code>-g</code> 將會全域安裝</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
-<li><p>init hexo app<br> 先 <code>cd</code> 到你想要建立的資料夾目錄底下，</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-hexo-app</span><br></pre></td></tr></table></figure>
-
-<p> 安裝完後的畫面會長這樣<br> <img src="/images/install-hexo.png" alt="成功安裝hexo圖片"></p>
-</li>
-<li><p>預覽剛剛建立好的 app</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="建立一篇文章"><a href="#建立一篇文章" class="headerlink" title="建立一篇文章"></a>建立一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;my new post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>會在 source/_posts/ 底下建立一個檔名為標題的 md 檔</p>
-<p>撰寫文章的方式為 markdown 的格式</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 用 hexo 建立一個 blog app</span><br><span class="line">date: 2021-05-21 23:14:19</span><br><span class="line">tags:</span><br><span class="line"></span><br><span class="line"><span class="section">- hexo</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">你的文章內容.......</span><br><span class="line">.......</span><br></pre></td></tr></table></figure>
-
-<h3 id="更改主題"><a href="#更改主題" class="headerlink" title="更改主題"></a>更改主題</h3><p>先安裝主題！</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
-
-<p>安裝完主題之後，接下要將預設主體改成剛剛下載的新主題</p>
-<p>將 _config.yml 中的 <code>theme: landscape</code> 改成 <code>theme: next</code></p>
-<p>改完後重新 run 一次 <code>hexo server</code>，就會看到主題已經更新了</p>
-<h3 id="發佈到-github-上"><a href="#發佈到-github-上" class="headerlink" title="發佈到 github 上"></a>發佈到 github 上</h3><p>先在自己的 github 上建立一個 repository<br>名為 你的github帳號.github.io</p>
-<p><img src="/images/create-repository.png" alt="建立repository圖片"></p>
-<p>先安裝一個快速發佈到 github 上的套件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deploy-git</span><br></pre></td></tr></table></figure>
-
-<p>安裝完後去 <code>_config.yml</code> 設定要推到 github 上的 repo url</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你的 repo url</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p>設定完後就可以推上去了<br><code>-g</code> 是 generate 的意思，deploy 的時候順便把靜態頁面產生出來</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g</span><br></pre></td></tr></table></figure>
-
+          <p>在建立完之後，想要紀錄一下自己建立起來的過程，剛好可以當第一篇文章哈哈...</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/05/21/%E7%94%A8-hexo-%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B-blog-app/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
