@@ -20,23 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;example.com&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Pisces&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Allen Wang">
-<meta property="og:url" content="http://example.com/archives/2021/05/index.html">
+<meta name="description" content="每次只要重開機或重開 terminal 下 code 指令的時候，總是會跳出 zsh command not found code 這個訊息，後來我...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="永久安裝 VS Code &#96;code&#96; 指令">
+<meta property="og:url" content="http://example.com/2021/07/24/%E6%B0%B8%E4%B9%85%E5%AE%89%E8%A3%9D-VS-Code-code-%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Allen Wang">
+<meta property="og:description" content="每次只要重開機或重開 terminal 下 code 指令的時候，總是會跳出 zsh command not found code 這個訊息，後來我...">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-07-24T03:22:55.000Z">
+<meta property="article:modified_time" content="2021-07-24T04:23:24.228Z">
 <meta property="article:author" content="npcenthusiasm">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2021/05/">
+<link rel="canonical" href="http://example.com/2021/07/24/%E6%B0%B8%E4%B9%85%E5%AE%89%E8%A3%9D-VS-Code-code-%E6%8C%87%E4%BB%A4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:&quot;&quot;,&quot;permalink&quot;:&quot;&quot;,&quot;path&quot;:&quot;archives&#x2F;2021&#x2F;05&#x2F;index.html&quot;,&quot;title&quot;:&quot;&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;07&#x2F;24&#x2F;%E6%B0%B8%E4%B9%85%E5%AE%89%E8%A3%9D-VS-Code-code-%E6%8C%87%E4%BB%A4&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;07&#x2F;24&#x2F;永久安裝-VS-Code-code-指令&#x2F;&quot;,&quot;title&quot;:&quot;永久安裝 VS Code &#96;code&#96; 指令&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>Archive | Allen Wang</title><script src="/js/config.js"></script>
+<title>永久安裝 VS Code `code` 指令 | Allen Wang</title><script src="/js/config.js"></script>
   
 
 
@@ -148,49 +152,87 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 3 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/24/%E6%B0%B8%E4%B9%85%E5%AE%89%E8%A3%9D-VS-Code-code-%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="npcenthusiasm">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Allen Wang">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          永久安裝 VS Code `code` 指令
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="Created: 2021-07-24 11:22:55 / Modified: 12:23:24" itemprop="dateCreated datePublished" datetime="2021-07-24T11:22:55+08:00">2021-07-24</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">每次只要重開機或重開 terminal 下 code 指令的時候，總是會跳出 zsh command not found code 這個訊息，後來我...</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>每次只要重開機或重開 terminal 下 code 指令的時候，總是會跳出 <code>zsh: command not found: code</code> 這個訊息 (因為我是用 oh-my-zsh 這一個 terminal)，然後我就會直接打開 VS Code 輸入 <code>command + p</code> 輸入 <code>Install &#39;code&#39; command in PATH</code> 來安裝指令，接下來就能用了。</p>
+<p>但問題是每次只要重開機，<code>code</code> 指令都會消失，後來爬了一下文章，發現原因是因為我 <code>Visual Studio Code.app</code> 是安裝在 <code>Downloads</code> 這個臨時資料夾之中，只要把它移到 <code>Applications</code> 資料夾底下，重啟 terminal 再到 VS Code 裝 <code>code</code> 指令，就解決掉每次重開機都會遇到的找不到 <code>code</code> 指令的問題了。</p>
+<p>參考文章<br><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/45518789/how-to-install-visual-studio-codes-code-command-permanently">https://stackoverflow.com/questions/45518789/how-to-install-visual-studio-codes-code-command-permanently</a><br><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line</a></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-21T23:14:19+08:00"
-              content="2021-05-21">
-          05-21
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/21/%E7%94%A8-hexo-%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B-blog-app/" itemprop="url">
-            <span itemprop="name">用 hexo 建立一個 blog app</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/07/14/Chorme-font-size-%E5%B0%8F%E6%96%BC-12px-%E7%9A%84%E6%96%B9%E6%B3%95/" rel="prev" title="Chrome font size 如何小於 12px ？">
+                  <i class="fa fa-chevron-left"></i> Chrome font size 如何小於 12px ？
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 <script src="/js/comments.js"></script>
 </div>
   </main>
